@@ -1,0 +1,10 @@
+/home/kimboo/hcono/hcono/bin/Debug/netcoreapp2.0/hcono.deps.json
+/home/kimboo/hcono/hcono/bin/Debug/netcoreapp2.0/hcono.runtimeconfig.json
+/home/kimboo/hcono/hcono/bin/Debug/netcoreapp2.0/hcono.runtimeconfig.dev.json
+/home/kimboo/hcono/hcono/bin/Debug/netcoreapp2.0/hcono.dll
+/home/kimboo/hcono/hcono/bin/Debug/netcoreapp2.0/hcono.pdb
+/home/kimboo/hcono/hcono/obj/Debug/netcoreapp2.0/hcono.csproj.CoreCompileInputs.cache
+/home/kimboo/hcono/hcono/obj/Debug/netcoreapp2.0/hcono.AssemblyInfoInputs.cache
+/home/kimboo/hcono/hcono/obj/Debug/netcoreapp2.0/hcono.AssemblyInfo.cs
+/home/kimboo/hcono/hcono/obj/Debug/netcoreapp2.0/hcono.dll
+/home/kimboo/hcono/hcono/obj/Debug/netcoreapp2.0/hcono.pdb
