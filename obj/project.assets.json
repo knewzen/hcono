@@ -2670,6 +2670,29 @@
           }
         }
       },
+      "mongocsharpdriver/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        },
+        "runtime": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        }
+      },
+      "MongoRepository/1.6.11": {
+        "type": "package",
+        "dependencies": {
+          "mongocsharpdriver": "[1.11.0]"
+        },
+        "compile": {
+          "lib/net45/MongoRepository.Net45.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MongoRepository.Net45.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -7390,6 +7413,40 @@
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "mongocsharpdriver/1.11.0": {
+      "sha512": "0FBUKnTd/WwVW8BhML7nL0+oNaDl1eieP5jDLolmSfb3Hk7x0ke4yMAapILWy8G+286T77QqzM2XpaPFaAAyRg==",
+      "type": "package",
+      "path": "mongocsharpdriver/1.11.0",
+      "files": [
+        "License.rtf",
+        "lib/net35/MongoDB.Bson.XML",
+        "lib/net35/MongoDB.Bson.dll",
+        "lib/net35/MongoDB.Driver.XML",
+        "lib/net35/MongoDB.Driver.dll",
+        "mongocsharpdriver.1.11.0.nupkg.sha512",
+        "mongocsharpdriver.nuspec"
+      ]
+    },
+    "MongoRepository/1.6.11": {
+      "sha512": "w8vub36I9MsR2x6e7DUIfy6foWdOJN1+YrtuiAC25HKSRN991NIm9+f8ZUUFBjbXgxbvPP0QwNPME/3h8Jxyiw==",
+      "type": "package",
+      "path": "mongorepository/1.6.11",
+      "files": [
+        "MongoRepository.chm",
+        "content/app.config.transform",
+        "content/web.config.transform",
+        "lib/net35/MongoRepository.Net35.dll",
+        "lib/net35/MongoRepository.Net35.xml",
+        "lib/net40/MongoRepository.Net40.dll",
+        "lib/net40/MongoRepository.Net40.xml",
+        "lib/net45/MongoRepository.Net45.dll",
+        "lib/net45/MongoRepository.Net45.xml",
+        "mongorepository.1.6.11.nupkg.sha512",
+        "mongorepository.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "NETStandard.Library/2.0.0": {
@@ -12529,7 +12586,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "MongoRepository >= 1.6.11"
     ]
   },
   "packageFolders": {
@@ -12579,6 +12637,10 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
+          },
+          "MongoRepository": {
+            "target": "Package",
+            "version": "1.6.11"
           }
         },
         "imports": [
@@ -12588,5 +12650,27 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'mongocsharpdriver 1.11.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "mongocsharpdriver",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MongoRepository 1.6.11' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MongoRepository",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

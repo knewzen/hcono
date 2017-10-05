@@ -2,117 +2,33 @@
     ViewData["Title"] = "Home Page";
 }
 
-<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Quicksand">
-    <style>
-      body {
-        font-family: 'Quicksand', serif;
-        font-size: 48px;
-      }
-      .input, .button {
-           font-family: 'Quicksand', serif;
-        font-size: 18px;
-      }
-    </style>
+<div class="container">
+  <div class="columns">
+  <div class="column is-three-quarters">
+     <div class="title">
+    <h1>hcono! </h1>
+  </div>  
 
-<div class="section">
-
-<h1 class="title is-1">hcono!   </h1>
-
-<div class="section">
-
-<div class="tabs">
-  <ul>
-    <li onclick="openCity(event, 'Magasins')"  id="defaultOpen" class="tablinks is-active"><a>Magasins</a></li>
-    <li onclick="openCity(event, 'Personnes')" class="tablinks"><a>Personnes</a></li>
-    <li  onclick="openCity(event, 'Téléphones')" class="tablinks"><a>Téléphones</a></li>
-    <li><a>Documents</a></li>
-  </ul>
-</div>
-<!-- 
-<div class="tab">
-  <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div> -->
-
-<div id="Magasins" class="tabcontent">
-    <div class="level">
-          <div class="level-left">
-             
-    <div class="level-item">
+  </div>
+  </div>
+<div class="columns">
+  <div class="column is-three-quarters">
+   
       <div class="field has-addons">
-        <p class="control">
-          <input class="input" type="text" placeholder="ex: Réstaurants...">
-        </p> <p class="control">
-          <input class="input" type="text" placeholder="Cité, ville, Wilaya...">
-        </p>
-        <p class="control">
-          <button class="button">
-            Chercher
-          </button>
-        </p>
+      <div class="control wide">
+        <input class="input" type="text" placeholder="magasins, réstaurants, coiffeurs... ">
+      </div>
+      <div class="control ">
+        <input class="input" type="text" placeholder="ex: cité, ville, wilaya...">
+      </div>
+      <div class="control">
+        <a class="button is-info">
+          Chercher
+        </a>
       </div>
     </div>
-              </div>    
-    </div>
+
+  </div>
+  </div>  
+  
 </div>
-
-<div id="Personnes" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Téléphones" class="tabcontent">
-  <div class="level">
-          <div class="level-left">
-             
-    <div class="level-item">
-      <div class="field has-addons">
-        <p class="control">
-          <input class="input" style="width:450px;" type="text" placeholder="Numéro téléphone...">
-        </p>
-        <p class="control">
-          <button class="button">
-            Chercher
-          </button>
-        </p>
-      </div>
-    </div>
-              </div>    
-    </div>
-</div>
-
-<script>
-    function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" is-active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " is-active";
-}
-
-    </script>
-
-    <script>
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
- 
-</div>
-
-</div>
-

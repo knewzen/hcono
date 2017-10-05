@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "a7aa306d2e264d92ffef06296341a5e29b6e41eb"
+    "signature": "58d76684bf2ad23e57abb48fac68a0a2909ce771"
   },
   "compilationOptions": {
     "defines": [
@@ -24,7 +24,8 @@
       "hcono/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.NETCore.App": "2.0.0",
+          "MongoRepository": "1.6.11"
         },
         "runtime": {
           "hcono.dll": {}
@@ -2315,6 +2316,27 @@
         },
         "compile": {
           "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+        }
+      },
+      "mongocsharpdriver/1.11.0": {
+        "runtime": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        },
+        "compile": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        }
+      },
+      "MongoRepository/1.6.11": {
+        "dependencies": {
+          "mongocsharpdriver": "1.11.0"
+        },
+        "runtime": {
+          "lib/net45/MongoRepository.Net45.dll": {}
+        },
+        "compile": {
+          "lib/net45/MongoRepository.Net45.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.1": {
@@ -5111,6 +5133,20 @@
       "sha512": "sha512-dA36TlNVn/XfrZtmf0fiI/z1nd3Wfp2QVzTdj26pqgP9LFWq0i1hYEUAW50xUjGFYn1+/cP3KGuxT2Yn1OUNBQ==",
       "path": "microsoft.win32.registry/4.4.0",
       "hashPath": "microsoft.win32.registry.4.4.0.nupkg.sha512"
+    },
+    "mongocsharpdriver/1.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0FBUKnTd/WwVW8BhML7nL0+oNaDl1eieP5jDLolmSfb3Hk7x0ke4yMAapILWy8G+286T77QqzM2XpaPFaAAyRg==",
+      "path": "mongocsharpdriver/1.11.0",
+      "hashPath": "mongocsharpdriver.1.11.0.nupkg.sha512"
+    },
+    "MongoRepository/1.6.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w8vub36I9MsR2x6e7DUIfy6foWdOJN1+YrtuiAC25HKSRN991NIm9+f8ZUUFBjbXgxbvPP0QwNPME/3h8Jxyiw==",
+      "path": "mongorepository/1.6.11",
+      "hashPath": "mongorepository.1.6.11.nupkg.sha512"
     },
     "Newtonsoft.Json/10.0.1": {
       "type": "package",

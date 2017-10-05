@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using hcono.Models;
+using hcono.Models.Documents;
 
 namespace hcono.Controllers
 {
@@ -18,7 +19,6 @@ namespace hcono.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
